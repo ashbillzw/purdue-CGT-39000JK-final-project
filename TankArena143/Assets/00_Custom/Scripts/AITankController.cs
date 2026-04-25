@@ -1,0 +1,2 @@
+        // if (Physics.BoxCast(TankFireVfx.position, new Vector3(1.25f, 0.1f, 0.1f), TankFireVfx.forward, out RaycastHit hit, TankFireVfx.rotation, 100f))
+        //     TankFireVfx.localScale = new Vector3(1, 1, hit.distance);
