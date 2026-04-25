@@ -1,6 +1,8 @@
 using UnityEngine;
 
 public class Tank : MonoBehaviour {
+    public int score = 0;
+
     public float moveSpeed = 2f;
     public float turnSpeed = 2f;
     public Transform tankFireVfx;
@@ -14,8 +16,15 @@ public class Tank : MonoBehaviour {
     public void fire() {
         if (fireCooldown == 0){
             fireCooldown = 50;
-            if (Physics.Raycast(tankFireVfx.position, tankFireVfx.forward, out RaycastHit hit, 100f))
-                tankFireVfx.localScale = new Vector3(1, 1, hit.distance);
+            if (Physics.Raycast(
+                tankFireVfx.position,
+                tankFireVfx.forward,
+                out RaycastHit hit,
+                100f,
+                LayerMask.GetMask("Default") | LayerMask.GetMask("Tank")
+            )) tankFireVfx.localScale = new Vector3(1, 1, hit.distance);
+
+            if (hit.collider.TryGetComponent<Tank>(out _)) score++;
         }
     }
 

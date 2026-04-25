@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4961211890900453543}
   - component: {fileID: 4016635978414704688}
   - component: {fileID: 5312482184672618255}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4193e151845854998dc0ebd956f860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Tank
+  score: 0
   moveSpeed: 2
   turnSpeed: 2
   tankFireVfx: {fileID: 6632981580756578851}
@@ -111,7 +112,7 @@ GameObject:
   - component: {fileID: 5484257458814753184}
   - component: {fileID: 8258384654958769481}
   - component: {fileID: 5920651689895546667}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6632981580756578851}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFireVfxBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -232,7 +233,7 @@ GameObject:
   - component: {fileID: 8472201532203148521}
   - component: {fileID: 4411303975041639950}
   - component: {fileID: 3724384031202384763}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +322,7 @@ GameObject:
   - component: {fileID: 5558086499413396692}
   - component: {fileID: 853475393861397203}
   - component: {fileID: 1479944971356566773}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TankFireVfx
   m_TagString: Untagged
   m_Icon: {fileID: 0}
